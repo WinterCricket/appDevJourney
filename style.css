@@ -2,9 +2,14 @@
 /*custom properties*/
 
 :root {
-	--clr-primary-300: ;
-	--clr-primary-400: ;
-	--clr-neutral-900: ;
+	--clr-primary-200: #ffff80;
+	--clr-primary-400: #a9d6ca;
+
+	--clr-neutral-100: #fff;
+	--clr-neutral-900: #19342c;
+
+	--ff-primary: 'Roboto', sans-serif;
+	--ff-accent: 'Lateef', cursive;
 }
 
 *,
@@ -12,6 +17,13 @@
 *::after {
 	
 	box-sizing: border-box;
+}
+
+body {
+	font-family: var(--ff-primary);
+	font-weight: 400;
+	font-size: 1.3125rem;
+	line-height: 1.6;
 }
 
 body,
@@ -23,9 +35,43 @@ p {
 }
 
 img {
-	
+	height: 18.75rem;
+	width: 31.25rem;
 }
 
-h1, h2 {
-	font-family: 'Lateef', cursive;
+
+ /*  utility classes*/
+h1,
+h2,
+h3 {
+	font-family: var(--ff-accent);
+	font-weight: 900;
+	line-height: 1;
+}
+
+.text-center {
+	text-align: center;
+}
+header,
+section {
+	padding: 3rem 0;
+}
+
+.container {
+	margin-inline: auto;
+	width: min(90%, 70.5rem);
+}
+.container--narrow {
+	max-width: 50rem;
+}
+
+.bg-light {
+	background-color: var(--clr-primary-200);
+}
+.bg-dark {
+	color: var(--clr-neutral-100);
+	background-color: var(--clr-neutral-900);
+}
+.bg-accent {
+	background-color: var(--clr-primary-400);
 }
