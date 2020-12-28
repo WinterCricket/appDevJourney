@@ -1,0 +1,31 @@
+
+/*custom properties*/
+
+:root {
+	--clr-primary-300: ;
+	--clr-primary-400: ;
+	--clr-neutral-900: ;
+}
+
+*,
+*::before,
+*::after {
+	
+	box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+	margin: 0;
+}
+
+img {
+	
+}
+
+h1, h2 {
+	font-family: 'Lateef', cursive;
+}
