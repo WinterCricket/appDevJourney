@@ -1,0 +1,3 @@
+The question is always whether or not this text file allows for regular text.
+
+I don't imagine that text file without a specialized app would format itself.
